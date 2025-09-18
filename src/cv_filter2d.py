@@ -3,8 +3,8 @@ import numpy as np
 def identity_kernel() -> np.array:
     # 중심값만 1인 아이덴티티 커널
     arr = [[0, 0, 0],
-           [0, 0, 0],
-           [0, 0, 1]]
+           [0, 1, 0],
+           [0, 0, 0]]
     return np.array(arr, dtype=np.float32)
 
 def ones_kernel() -> np.array:
